@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Latest compiled and minified CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- css file -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap CSS link -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <title>FlexiSports - Home</title>
+
+    <style></style>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <div id="nav-container">
+      <section class="header">
+        <nav class="navbar navbar-expand-sm navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"
+              ><img src="./images/logo.jpg" alt=""
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#mynavbar"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+              <ul class="navbar-nav me-auto">
+                <li class="list-group-item nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="list-group-item nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    href="shop.html"
+                    >Shop</a
+                  >
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="navbarDropdownMenuLink"
+                  >
+                    <li class="dropdown-submenu">
+                      <a class="dropdown-item" href="#">Category 1</a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="#">Subcategory 1.1</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Subcategory 1.2</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                      <a class="dropdown-item" href="#">Category 2</a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="#">Subcategory 2.1</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Subcategory 2.2</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="list-group-item nav-item">
+                  <a class="nav-link" href="javascript:void(0)">About Us</a>
+                </li>
+                <li class="list-group-item nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >Category</a
+                  >
+
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="navbarDropdownMenuLink"
+                  >
+                    <li><a class="dropdown-item" href="#">Category 1</a></li>
+                    <li><a class="dropdown-item" href="#">Category 2</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="d-flex">
+                <a
+                  href="#myModal"
+                  onclick="hideDiv()"
+                  ;
+                  data-toggle="modal"
+                  class="nav-link me-3"
+                  href="#"
+                  >Login</a
+                >
+                <a class="nav-link me-3" href="wishlist.html"
+                  ><i class="far fa-heart"></i
+                ></a>
+                <a class="nav-link me-3" href="#"
+                  ><i class="fas fa-shopping-cart"></i
+                ></a>
+                <a class="nav-link" href="#"
+                  ><i class="fa-solid fa-magnifying-glass"></i
+                ></a>
+
+                <!-- <i class="fal fa-heart"></i> -->
+              </div>
+            </div>
+          </div>
+        </nav>
+      </section>
+    </div>
+    <!-- End Header -->
+
+    <!-- Cart Section -->
+
+    <section id="cart-section" class="cart container" style="color: #686868">
+      <h2 class="text-center">Cart</h2>
+      <div class="back-to-shop">
+        <button class="button outlined btn-sm">
+          <!-- <div class="link-wrapper"> -->
+          <a class="link hover-1" href="#"
+            ><i class="fas fa-light fa-arrow-left"></i> Go To Shopping</a
+          >
+        </button>
+      </div>
+
+      <div class="row shopping-cart-content">
+        <div class="col-lg-7 col-xl-8 table-responsive">
+          <table class="table">
+            <tbody>
+              <tr>
+                <td>
+                  <img class="img-thumbnail" src="./images/1.png" alt="" />
+                </td>
+                <td class="cart-data">
+                  <div class="row">
+                    <div
+                      class="col-md-6 col-sm-12 product-name"
+                      data-title="Product"
+                    >
+                      <a class="pro-title" href=""
+                        >Equine Bevel Blue Sweet Iron Loose Ring Snaffle Bit -
+                        Full</a
+                      >
+                      <div class="product-price" data-title="Price">
+                        <span class="woocommerce-Price-amount amount"
+                          ><bdi
+                            ><span class="woocommerce-Price-currencySymbol"
+                              >£</span
+                            >19.99</bdi
+                          ></span
+                        >
+                      </div>
+                    </div>
+                    <div
+                      class="product-quantity col-md-3 col-6"
+                      data-title="Quantity"
+                    >
+                      <div class="quantity">
+                        <span class="minus"
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="feather feather-minus"
+                          >
+                            <line x1="5" y1="12" x2="19" y2="12"></line></svg
+                        ></span>
+                        <input
+                          type="number"
+                          class="input-text qty text text-center"
+                          step="1"
+                          min="0"
+                          name=""
+                          value="2"
+                          title="Qty"
+                          placeholder=""
+                          inputmode="numeric"
+                        />
+                        <span class="plus"
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="feather feather-plus"
+                          >
+                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                            <line x1="5" y1="12" x2="19" y2="12"></line></svg
+                        ></span>
+                      </div>
+                    </div>
+                    <div
+                      class="product-subtotal col-md-3 col-6"
+                      data-title="Subtotal"
+                    >
+                      <span class="woocommerce-Price-amount amount"
+                        ><bdi
+                          ><span class="woocommerce-Price-currencySymbol"
+                            >£</span
+                          >39.98</bdi
+                        ></span
+                      >
+                    </div>
+                    <div class="product-actions col-12">
+                      <a
+                        href="https://equinegears.com/cart/?remove_item=894fdd70a7a94d54472fb6925ab1d145&amp;_wpnonce=e140fe772b"
+                        class="remove link hover-1"
+                        aria-label="Remove this item"
+                        data-product_id="4642"
+                        data-product_sku=""
+                        >×</a
+                      >
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="payment-table p-3 col table-responsive">
+            <table class="table">
+                <tbody>
+                  <tr>
+                      <th>
+                          Cart Totals
+                      </th>
+                  </tr>
+                <tr>
+                    <th class="text-uppercase">Subtotals</th>
+                    <td>$12</td>
+                  </tr>
+                <tr>
+                    <td>
+                        <h5 class="text-uppercase">Shipping</h5>
+                        
+                        <p>Shipping options will be updated during checkout.</p>
+                    </td>
+                    <tr>
+                        <th class="text-uppercase">Subtotals</th>
+                        <td>$12</td>
+                      </tr>
+                    <tr>
+                  </tr>
+                </tbody>
+              </table>
+              <button class="btn" style="background-color: #0a0a0a;"><a style="text-decoration: none; color:#fff;" href="checkout.html">Checkout</a></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- End Cart Section -->
+
+    <!-- Footer Start -->
+    <section class="footer">
+      <!-- Remove the container if you want to extend the Footer to full width. -->
+      <div class="my-5">
+        <!-- Footer -->
+        <footer
+          class="text-center text-lg-start text-white"
+          style="background-color: #0a0a0a"
+        >
+          <!-- Grid container -->
+          <div class="container p-4 pb-0">
+            <!-- Section: Links -->
+            <section class="">
+              <!--Grid row-->
+              <div class="row">
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                  <h5 class="text-uppercase">About Us</h5>
+
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Molestiae modi cum ipsam ad, illo possimus laborum ut
+                    reiciendis obcaecati. Ducimus, quas. Corrupti, pariatur
+                    eaque? Reiciendis assumenda iusto sapiente inventore animi?
+                  </p>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                  <h5 class="text-uppercase">Links</h5>
+
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <a href="#!" class="text-white">Link 1</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white">Link 2</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white">Link 3</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white">Link 4</a>
+                    </li>
+                  </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                  <h5 class="text-uppercase">Links</h5>
+
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <a href="#!" class="text-white">Link 1</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white">Link 2</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white">Link 3</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white">Link 4</a>
+                    </li>
+                  </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                  <h5 class="text-uppercase">Links</h5>
+
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <a href="#!" class="text-white">Link 1</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white">Link 2</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white">Link 3</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white">Link 4</a>
+                    </li>
+                  </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                  <h5 class="text-uppercase">Links</h5>
+
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <a href="#!" class="text-white">Link 1</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white">Link 2</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white">Link 3</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white">Link 4</a>
+                    </li>
+                  </ul>
+                </div>
+                <!--Grid column-->
+              </div>
+              <!--Grid row-->
+            </section>
+            <!-- Section: Links -->
+
+            <hr class="mb-4" />
+
+            <!-- Section: CTA -->
+            <section class="">
+              <p class="d-flex justify-content-center align-items-center">
+                <span class="me-3">Register for free</span>
+                <button type="button" class="btn btn-outline-light btn-rounded">
+                  Sign up!
+                </button>
+              </p>
+            </section>
+            <!-- Section: CTA -->
+
+            <hr class="mb-4" />
+
+            <!-- Section: Social media -->
+            <section class="mb-4 text-center">
+              <!-- Facebook -->
+              <a
+                class="btn btn-outline-light btn-floating m-1"
+                href="#!"
+                role="button"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+
+              <!-- Twitter -->
+              <a
+                class="btn btn-outline-light btn-floating m-1"
+                href="#!"
+                role="button"
+                ><i class="fab fa-twitter"></i
+              ></a>
+
+              <!-- Google -->
+              <a
+                class="btn btn-outline-light btn-floating m-1"
+                href="#!"
+                role="button"
+                ><i class="fab fa-google"></i
+              ></a>
+
+              <!-- Instagram -->
+              <a
+                class="btn btn-outline-light btn-floating m-1"
+                href="#!"
+                role="button"
+                ><i class="fab fa-instagram"></i
+              ></a>
+
+              <!-- Linkedin -->
+              <a
+                class="btn btn-outline-light btn-floating m-1"
+                href="#!"
+                role="button"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+
+              <!-- Github -->
+              <a
+                class="btn btn-outline-light btn-floating m-1"
+                href="#!"
+                role="button"
+                ><i class="fab fa-github"></i
+              ></a>
+            </section>
+            <!-- Section: Social media -->
+          </div>
+          <!-- Grid container -->
+
+          <!-- Copyright -->
+          <div
+            class="text-center p-3"
+            style="background-color: rgba(0, 0, 0, 0.2)"
+          >
+            © 2023 Copyright:
+            <a class="text-white" href="https://redmingorg.com/"
+              >Created By Muhammad Faisal</a
+            >
+            <button class="" id="scroll-to-top-btn">
+              <i class="fas fa-arrow-up"></i>
+            </button>
+          </div>
+          <!-- <div class="goTop d-flex justify-content-end"> -->
+          <!-- </div> -->
+          <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+      </div>
+    </section>
+    <!-- End of .container -->
+    <!-- Footer End -->
+
+    <!-- Bootstrap JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="main.js"></script>
+  </body>
+</html>
