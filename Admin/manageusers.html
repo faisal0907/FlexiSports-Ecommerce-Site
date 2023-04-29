@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Sidebar 01</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+				
+    <!-- Font Awesome Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+		<link rel="stylesheet" href="./styleindex.css">
+
+<!-- Include jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+  </head>
+  <body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		<div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar">
+				<div class="p-4 pt-5">
+		  		<a href="#" class="img logo rounded-circle mb-5" style="background-image: url(../images/test1.jpeg); "></a>
+	        <ul class="list-unstyled components mb-5">
+	          <li class="active">
+	            <a href="./indexadmin.html">Home</a>
+	            
+	          </li>
+	          <li>
+	              <a href="./addcategory.html">Category</a>
+	          </li>
+	          <li>
+              <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
+              <ul class="collapse list-unstyled" id="pageSubmenu">
+                <li>
+                    <a href="#">Page 1</a>
+                </li>
+                <li>
+                    <a href="#">Page 2</a>
+                </li>
+                <li>
+                    <a href="#">Page 3</a>
+                </li>
+              </ul>
+	          </li>
+	          <li>
+              <a href="addbrands.html">Add Brands</a>
+	          </li>
+	          <li>
+                <a href="addproducts.html">Products Management</a>
+                </li>
+                <li>
+                <a href="manageorders.html">Orders Management</a>
+                </li>
+                <li>
+                <a href="manageusers.html">User Management Management</a>
+                </li>
+	        </ul>
+
+	        <div class="footer">
+	        	<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						  <!-- Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a> -->
+						  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+	        </div>
+
+	      </div>
+    	</nav>
+
+        <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+
+            <button type="button" id="sidebarCollapse" class="btn btn-primary">
+              <i class="fa fa-bars"></i>
+              <span class="sr-only">Toggle Menu</span>
+            </button>
+            <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"><sup>1</sup><i class="fal fa-sharp fa-solid fa-bell"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><sup>2</sup><i class="fal fa-sharp fa-solid fa-message"></i></a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#pageSubmenu1" data-toggle="collapse" aria-expanded="false" >Account</a>
+                        <ul class="collapse list-unstyled" id="pageSubmenu1">
+                          <li class="nav-link">
+                              <a href="#">Password Change</a>
+                          </li>
+                          <li class="nav-link">
+                              <a href="#">Logout</a>
+                          </li>
+                        </ul>
+                        </li>
+                  </ul>
+            </div>
+          </div>
+        </nav>
+
+        <h2 class="mb-4">Manage Users</h2>
+        Here admin can manage users
+      </div>
+		</div>
+
+
+
+		<script>
+
+
+
+
+
+
+
+
+
+
+
+
+			(function($) {
+
+"use strict";
+
+var fullHeight = function() {
+
+	$('.js-fullheight').css('height', $(window).height());
+	$(window).resize(function(){
+		$('.js-fullheight').css('height', $(window).height());
+	});
+
+};
+fullHeight();
+
+$('#sidebarCollapse').on('click', function () {
+  $('#sidebar').toggleClass('active');
+});
+
+})(jQuery);
+
+		</script>
+      <!-- Bootstrap JavaScript -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	  
+	  
+
+    <!-- <script src="main.js"></script> -->
+  </body>
+</html>
